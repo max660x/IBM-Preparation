@@ -1,0 +1,13 @@
+---
+  - name: apache
+    hosts: linux
+    tasks:
+      - name: prova
+        yum:
+          name: httpd
+          state: latest
+      - name: disable fwd
+        service:
+          name: httpd
+          state: started
+          enabled: True

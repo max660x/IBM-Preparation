@@ -1,0 +1,23 @@
+---
+  - name: Create ansible user
+    hosts: homelnx
+    tasks:
+    - name: Create Sudo Group
+      group:
+        name: sudo
+        state: present
+    - name: append sudo group to sudoers
+      lineinfile:
+        dest: /etc/sudoers
+        state: present
+        regexp: '^%sudo'
+        line: '%sudo ALL=(ALL) NOPASSWD: ALL'
+        validate: 'visudo -cf %s'
+    - name: Create User
+      user:
+        name: ansible
+        group: sudo
+        shell: /bin/bash
+        create_home: yes
+        password: $6$vWSgN9kaz3CW1Ax$I9/aiSZDxCIgfh3.C7ZvVa.V/yZdzZdY7WBRqDT2epsQq.VwbbpPUoCPlrVIVly8yNPbN8/0oif0UyLaJ3M.T/
+        state: present
