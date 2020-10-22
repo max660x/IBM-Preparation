@@ -1,13 +1,18 @@
 ---
   - name: apache
-    hosts: linux
+    hosts: test
     tasks:
       - name: prova
         yum:
-          name: httpd
+          name: squid
           state: latest
-      - name: disable fwd
+      - name: start squid
         service:
-          name: httpd
+          name: squid
           state: started
           enabled: True
+      - name: disable firewalld
+        service:
+          name: firewalld
+          state: stopped
+          enabled: False

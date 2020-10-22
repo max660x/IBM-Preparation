@@ -1,0 +1,92 @@
+--------SysInfo--------
+NAME="Ubuntu"
+VERSION="20.04.1 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.1 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+
+Linux DESKTOP-R3861NI 4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+
+              total        used        free      shared  buff/cache   available
+Mem:       16519128    13395432     2894344       17720      229352     2989964
+Swap:      30832508      751548    30080960
+
+Filesystem      Size  Used Avail Use% Mounted on
+rootfs          236G   99G  137G  43% /
+none            236G   99G  137G  43% /dev
+none            236G   99G  137G  43% /run
+none            236G   99G  137G  43% /run/lock
+none            236G   99G  137G  43% /run/shm
+none            236G   99G  137G  43% /run/user
+tmpfs           236G   99G  137G  43% /sys/fs/cgroup
+C:\             236G   99G  137G  43% /mnt/c
+
+14: eth0: <> mtu 1500 group default qlen 1
+    link/ether f8:75:a4:75:8c:98
+    inet 169.254.164.230/16 brd 169.254.255.255 scope global dynamic 
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.80/24 brd 192.168.1.255 scope global dynamic 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::c877:d8c9:fda1:a4e6/64 scope link dynamic 
+       valid_lft forever preferred_lft forever
+11: eth1: <> mtu 1500 group default qlen 1
+    link/ether 24:41:8c:9f:2f:d0
+    inet 169.254.145.209/16 brd 169.254.255.255 scope global dynamic 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::c5e4:313d:1675:91d1/64 scope link dynamic 
+       valid_lft forever preferred_lft forever
+15: eth2: <BROADCAST,MULTICAST,UP> mtu 1326 group default qlen 1
+    link/ether 00:05:9a:3c:7a:00
+    inet 9.171.12.79/19 brd 9.171.31.255 scope global dynamic 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f189:924c:b3a8:fb50/64 scope link dynamic 
+       valid_lft forever preferred_lft forever
+39: eth3: <BROADCAST,MULTICAST,UP> mtu 1500 group default qlen 1
+    link/ether 00:15:5d:e8:1e:46
+    inet 172.21.64.1/20 brd 172.21.79.255 scope global dynamic 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::4077:4157:88a1:d4f6/64 scope link dynamic 
+       valid_lft forever preferred_lft forever
+1: lo: <LOOPBACK,UP> mtu 1500 group default qlen 1
+    link/loopback 00:00:00:00:00:00
+    inet 127.0.0.1/8 brd 127.255.255.255 scope global dynamic 
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host dynamic 
+       valid_lft forever preferred_lft forever
+21: wifi0: <BROADCAST,MULTICAST,UP> mtu 1500 group default qlen 1
+    link/ieee802.11 24:41:8c:9f:2f:cc
+    inet 172.30.63.218/24 brd 172.30.63.255 scope global dynamic 
+       valid_lft 685369sec preferred_lft 685369sec
+    inet6 fe80::8d6c:2783:ec0a:d4eb/64 scope link dynamic 
+       valid_lft forever preferred_lft forever
+4: wifi1: <> mtu 1500 group default qlen 1
+    link/ieee802.11 24:41:8c:9f:2f:cd
+    inet 169.254.174.121/16 brd 169.254.255.255 scope global dynamic 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::851:46cf:d4bb:ae79/64 scope link dynamic 
+       valid_lft forever preferred_lft forever
+17: wifi2: <> mtu 1500 group default qlen 1
+    link/ieee802.11 26:41:8c:9f:2f:cc
+    inet 169.254.130.37/16 brd 169.254.255.255 scope global dynamic 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::4429:48bf:5ce0:8225/64 scope link dynamic 
+       valid_lft forever preferred_lft forever
+
+--------ActiveServices--------
+
+
+
+PING www.google.com (216.58.198.36) 56(84) bytes of data.
+64 bytes from mil04s04-in-f4.1e100.net (216.58.198.36): icmp_seq=1 ttl=118 time=14.1 ms
+
+--- www.google.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 14.071/14.071/14.071/0.000 ms

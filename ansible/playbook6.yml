@@ -1,0 +1,18 @@
+---
+- hosts: test
+  name: dump machine info
+  become: yes
+  tasks:
+        - name: copy script to user home
+          copy:
+             src: ./scripts/pb6/getsysinfo
+             dest: /root/getsysinfo
+             owner: root
+             group: root
+             mode: '777'
+        - name: run sysinfo script
+          shell: /root/getsysinfo
+        - name: download report
+          fetch:
+             src: ./reportfile
+             dest: ./reports/
