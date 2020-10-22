@@ -1,0 +1,302 @@
+--------SysInfo--------
+NAME="CentOS Linux"
+VERSION="8 (Core)"
+ID="centos"
+ID_LIKE="rhel fedora"
+VERSION_ID="8"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="CentOS Linux 8 (Core)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:centos:centos:8"
+HOME_URL="https://www.centos.org/"
+BUG_REPORT_URL="https://bugs.centos.org/"
+
+CENTOS_MANTISBT_PROJECT="CentOS-8"
+CENTOS_MANTISBT_PROJECT_VERSION="8"
+REDHAT_SUPPORT_PRODUCT="centos"
+REDHAT_SUPPORT_PRODUCT_VERSION="8"
+
+
+Linux localhost.localdomain 4.18.0-193.19.1.el8_2.x86_64 #1 SMP Mon Sep 14 14:37:00 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+RANGE                                  SIZE  STATE REMOVABLE BLOCK
+0x0000000000000000-0x000000000fffffff  256M online        no   0-1
+0x0000000010000000-0x0000000027ffffff  384M online       yes   2-4
+0x0000000028000000-0x000000002fffffff  128M online        no     5
+0x0000000030000000-0x0000000037ffffff  128M online       yes     6
+0x0000000038000000-0x000000003fffffff  128M online        no     7
+0x0000000040000000-0x0000000057ffffff  384M online       yes  8-10
+0x0000000058000000-0x000000005fffffff  128M online        no    11
+0x0000000060000000-0x0000000067ffffff  128M online       yes    12
+0x0000000068000000-0x00000000bfffffff  1.4G online        no 13-23
+
+Memory block size:       128M
+Total online memory:       3G
+Total offline memory:      0B
+
+              total        used        free      shared  buff/cache   available
+Mem:        2790784      302456     2118640       10768      369688     2431792
+Swap:       2101244        9796     2091448
+
+Filesystem           Size  Used Avail Use% Mounted on
+devtmpfs             865M     0  865M   0% /dev
+tmpfs                881M   12K  881M   1% /dev/shm
+tmpfs                881M   17M  865M   2% /run
+tmpfs                881M     0  881M   0% /sys/fs/cgroup
+/dev/mapper/cl-root   50G  2.7G   48G   6% /
+/dev/mapper/cl-home   74G  557M   73G   1% /home
+/dev/sda2            976M  178M  732M  20% /boot
+/dev/sda1            599M  6.9M  592M   2% /boot/efi
+tmpfs                177M     0  177M   0% /run/user/0
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:01:50:01 brd ff:ff:ff:ff:ff:ff
+    inet 172.21.75.135/20 brd 172.21.79.255 scope global dynamic eth0
+       valid_lft 76792sec preferred_lft 76792sec
+
+--------ActiveServices--------
+proc-sys-fs-binfmt_misc.automount          static   
+dev-hugepages.mount                        static   
+dev-mqueue.mount                           static   
+proc-sys-fs-binfmt_misc.mount              static   
+sys-fs-fuse-connections.mount              static   
+sys-kernel-config.mount                    static   
+sys-kernel-debug.mount                     static   
+systemd-ask-password-console.path          static   
+systemd-ask-password-wall.path             static   
+bolt.service                               static   
+chrony-dnssrv@.service                     static   
+cockpit-motd.service                       static   
+cockpit-wsinstance-http-redirect.service   static   
+cockpit-wsinstance-http.service            static   
+cockpit-wsinstance-https-factory@.service  static   
+cockpit-wsinstance-https@.service          static   
+cockpit.service                            static   
+container-getty@.service                   static   
+dbus-org.freedesktop.hostname1.service     static   
+dbus-org.freedesktop.locale1.service       static   
+dbus-org.freedesktop.login1.service        static   
+dbus-org.freedesktop.portable1.service     static   
+dbus.service                               static   
+dm-event.service                           static   
+dnf-makecache.service                      static   
+dracut-cmdline.service                     static   
+dracut-initqueue.service                   static   
+dracut-mount.service                       static   
+dracut-pre-mount.service                   static   
+dracut-pre-pivot.service                   static   
+dracut-pre-trigger.service                 static   
+dracut-pre-udev.service                    static   
+dracut-shutdown.service                    static   
+emergency.service                          static   
+fstrim.service                             static   
+grub-boot-indeterminate.service            static   
+halt-local.service                         static   
+htcacheclean.service                       static   
+initrd-cleanup.service                     static   
+initrd-parse-etc.service                   static   
+initrd-switch-root.service                 static   
+initrd-udevadm-cleanup-db.service          static   
+kmod-static-nodes.service                  static   
+ldconfig.service                           static   
+lvm2-lvmpolld.service                      static   
+lvm2-pvscan@.service                       static   
+man-db-cache-update.service                static   
+mdadm-grow-continue@.service               static   
+mdadm-last-resort@.service                 static   
+mdcheck_continue.service                   static   
+mdcheck_start.service                      static   
+mdmon@.service                             static   
+mdmonitor-oneshot.service                  static   
+messagebus.service                         static   
+mlocate-updatedb.service                   static   
+polkit.service                             static   
+quotaon.service                            static   
+rc-local.service                           static   
+realmd.service                             static   
+rescue.service                             static   
+selinux-autorelabel.service                static   
+sshd@.service                              static   
+system-update-cleanup.service              static   
+systemd-ask-password-console.service       static   
+systemd-ask-password-wall.service          static   
+systemd-backlight@.service                 static   
+systemd-binfmt.service                     static   
+systemd-coredump@.service                  static   
+systemd-exit.service                       static   
+systemd-firstboot.service                  static   
+systemd-fsck-root.service                  static   
+systemd-fsck@.service                      static   
+systemd-halt.service                       static   
+systemd-hibernate-resume@.service          static   
+systemd-hibernate.service                  static   
+systemd-hostnamed.service                  static   
+systemd-hwdb-update.service                static   
+systemd-hybrid-sleep.service               static   
+systemd-initctl.service                    static   
+systemd-journal-catalog-update.service     static   
+systemd-journal-flush.service              static   
+systemd-journald.service                   static   
+systemd-kexec.service                      static   
+systemd-localed.service                    static   
+systemd-logind.service                     static   
+systemd-machine-id-commit.service          static   
+systemd-modules-load.service               static   
+systemd-portabled.service                  static   
+systemd-poweroff.service                   static   
+systemd-quotacheck.service                 static   
+systemd-random-seed.service                static   
+systemd-reboot.service                     static   
+systemd-remount-fs.service                 static   
+systemd-rfkill.service                     static   
+systemd-suspend-then-hibernate.service     static   
+systemd-suspend.service                    static   
+systemd-sysctl.service                     static   
+systemd-sysusers.service                   static   
+systemd-tmpfiles-clean.service             static   
+systemd-tmpfiles-setup-dev.service         static   
+systemd-tmpfiles-setup.service             static   
+systemd-udev-settle.service                static   
+systemd-udev-trigger.service               static   
+systemd-udevd.service                      static   
+systemd-update-done.service                static   
+systemd-update-utmp-runlevel.service       static   
+systemd-update-utmp.service                static   
+systemd-user-sessions.service              static   
+systemd-vconsole-setup.service             static   
+systemd-volatile-root.service              static   
+teamd@.service                             static   
+unbound-anchor.service                     static   
+usb_modeswitch@.service                    static   
+user-runtime-dir@.service                  static   
+user@.service                              static   
+system-cockpithttps.slice                  static   
+user.slice                                 static   
+cockpit-wsinstance-http-redirect.socket    static   
+cockpit-wsinstance-http.socket             static   
+cockpit-wsinstance-https-factory.socket    static   
+cockpit-wsinstance-https@.socket           static   
+dbus.socket                                static   
+syslog.socket                              static   
+systemd-coredump.socket                    static   
+systemd-initctl.socket                     static   
+systemd-journald-audit.socket              static   
+systemd-journald-dev-log.socket            static   
+systemd-journald.socket                    static   
+systemd-rfkill.socket                      static   
+systemd-udevd-control.socket               static   
+systemd-udevd-kernel.socket                static   
+basic.target                               static   
+bluetooth.target                           static   
+cryptsetup-pre.target                      static   
+cryptsetup.target                          static   
+emergency.target                           static   
+final.target                               static   
+getty-pre.target                           static   
+getty.target                               static   
+graphical.target                           static   
+hibernate.target                           static   
+hybrid-sleep.target                        static   
+initrd-fs.target                           static   
+initrd-root-device.target                  static   
+initrd-root-fs.target                      static   
+initrd-switch-root.target                  static   
+initrd.target                              static   
+local-fs-pre.target                        static   
+local-fs.target                            static   
+network-online.target                      static   
+network-pre.target                         static   
+network.target                             static   
+nss-lookup.target                          static   
+nss-user-lookup.target                     static   
+paths.target                               static   
+printer.target                             static   
+remote-fs-pre.target                       static   
+rescue.target                              static   
+rpcbind.target                             static   
+runlevel1.target                           static   
+runlevel5.target                           static   
+selinux-autorelabel.target                 static   
+shutdown.target                            static   
+sigpwr.target                              static   
+sleep.target                               static   
+slices.target                              static   
+smartcard.target                           static   
+sockets.target                             static   
+sound.target                               static   
+sshd-keygen.target                         static   
+suspend-then-hibernate.target              static   
+suspend.target                             static   
+swap.target                                static   
+sysinit.target                             static   
+system-update-pre.target                   static   
+system-update.target                       static   
+time-sync.target                           static   
+timers.target                              static   
+umount.target                              static   
+mdadm-last-resort@.timer                   static   
+systemd-tmpfiles-clean.timer               static   
+
+atd.service                                enabled  
+auditd.service                             enabled  
+autovt@.service                            enabled  
+chronyd.service                            enabled  
+crond.service                              enabled  
+dbus-org.freedesktop.nm-dispatcher.service enabled  
+dbus-org.freedesktop.resolve1.service      enabled  
+dbus-org.freedesktop.timedate1.service     enabled  
+getty@.service                             enabled  
+import-state.service                       enabled  
+irqbalance.service                         enabled  
+kdump.service                              enabled  
+libstoragemgmt.service                     enabled  
+loadmodules.service                        enabled  
+lvm2-monitor.service                       enabled  
+mcelog.service                             enabled  
+mdmonitor.service                          enabled  
+microcode.service                          enabled  
+NetworkManager-dispatcher.service          enabled  
+NetworkManager-wait-online.service         enabled  
+NetworkManager.service                     enabled  
+nis-domainname.service                     enabled  
+rngd.service                               enabled  
+selinux-autorelabel-mark.service           enabled  
+smartd.service                             enabled  
+squid.service                              enabled  
+sshd.service                               enabled  
+sssd.service                               enabled  
+systemd-resolved.service                   enabled  
+timedatex.service                          enabled  
+tuned.service                              enabled  
+vdo.service                                enabled  
+dm-event.socket                            enabled  
+lvm2-lvmpolld.socket                       enabled  
+sssd-kcm.socket                            enabled  
+remote-fs.target                           enabled  
+dnf-makecache.timer                        enabled  
+unbound-anchor.timer                       enabled  
+
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      4468/httpd          
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      897/sshd            
+tcp6       0      0 :::22                   :::*                    LISTEN      897/sshd            
+tcp6       0      0 :::3128                 :::*                    LISTEN      1046/(squid-1)      
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           1468/dhclient       
+udp        0      0 0.0.0.0:39175           0.0.0.0:*                           1046/(squid-1)      
+udp        0      0 127.0.0.1:323           0.0.0.0:*                           864/chronyd         
+udp6       0      0 :::50235                :::*                                1046/(squid-1)      
+udp6       0      0 ::1:323                 :::*                                864/chronyd         
+
+PING www.google.com (216.58.198.36) 56(84) bytes of data.
+64 bytes from mil04s04-in-f4.1e100.net (216.58.198.36): icmp_seq=1 ttl=117 time=13.10 ms
+
+--- www.google.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 13.991/13.991/13.991/0.000 ms

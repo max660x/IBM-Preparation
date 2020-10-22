@@ -1,0 +1,13 @@
+---
+- hosts: test
+  name: install apache
+  become: yes
+  tasks:
+        - name: install apache
+          package:
+            name: httpd
+            state: present
+        - name: start httpd
+          service:
+            name: httpd
+            state: started       

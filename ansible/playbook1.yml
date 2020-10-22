@@ -1,0 +1,8 @@
+---
+  - name: net-tools install
+    hosts: test
+    tasks:
+      - name: net-tools
+        yum:
+          name: net-tools
+          state: latest

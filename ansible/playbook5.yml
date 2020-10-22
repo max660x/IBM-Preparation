@@ -1,0 +1,30 @@
+---
+- hosts: test
+  name: install apache
+  become: yes
+  tasks:
+        - name: install apache
+          package:
+            name: httpd
+            state: present
+        - name: start apache
+          service:
+             name: httpd
+             state: started
+        - name: copy index file to /var/www
+          copy:
+             src: ./htmls/index
+             dest: /var/www/html/index.html
+             owner: apache
+             group: apache
+             mode: '664'
+        - name: stop apache
+          service:
+             name: httpd
+             state: stopped
+        - name: start apache
+          service:
+              name: httpd
+              state: started
+        - name: shell self curl
+          shell: curl http://localhost

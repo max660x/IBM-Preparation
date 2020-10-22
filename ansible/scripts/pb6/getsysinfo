@@ -1,0 +1,30 @@
+#!/bin/bash
+Reportfile=./reportfile
+if test -f "$Reportfile"; then
+	echo "Reportfile exist, creating newone"
+	Data=$(date +%m-%d-%Y)
+	mv ./reportfile ./reportfile.$Data
+fi
+touch reportfile
+echo \-\-\-\-\-\-\-\-SysInfo\-\-\-\-\-\-\-\- >> reportfile
+cat /etc/os-release >> reportfile
+echo >> reportfile
+uname -a >> reportfile
+echo >> reportfile
+lsmem >> reportfile
+echo >> reportfile
+free >> reportfile
+echo >> reportfile
+df -h >> reportfile
+echo >> reportfile
+ip a >> reportfile
+echo >> reportfile
+echo \-\-\-\-\-\-\-\-ActiveServices\-\-\-\-\-\-\-\- >> reportfile
+systemctl list-unit-files | grep static >> reportfile
+echo >> reportfile
+systemctl list-unit-files | grep enabled >> reportfile
+echo >> reportfile
+netstat -tulpn >> reportfile
+echo >> reportfile
+ping -c 1 www.google.com >> reportfile
+
